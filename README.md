@@ -1,2 +1,3 @@
 # teat-download
-https://github.com/SuperDuperBlade/teat-download/releases/download/dasdx/updateprogram1.2.jar
+A simple program that reads my github.io page to see if the latest update is avilable 
+
