@@ -9,10 +9,13 @@ import java.net.URL;
 public class Version {
 
 
-    private final String currentver = "3.9";
-private double newVersion;
+    private final String currentver = "4.1";
+    private  double newer = 0.0;
 
 
+    public double getNewer() {
+        return newer;
+    }
 
     //when this method is called it will establish a connection with the website and read the data
     //if the version from the website does not equal the currentver it will retrieve the latest url and notify the user
@@ -33,7 +36,7 @@ private double newVersion;
                 if (i == 2) {
                     l = l.replace("<p>", "");
                     l = l.replace("</p>", "");
-                    this.newVersion = Double.parseDouble(l);
+                    this.newer = Double.parseDouble(l);
 
                     if ((l = webreader.readLine()) != currentver) {
                         l = l.replace("<p>", "");
@@ -54,9 +57,7 @@ private double newVersion;
     }
 
 
-    public double getNewver(){
-        return this.newVersion;
-    }
+
 
 
 }

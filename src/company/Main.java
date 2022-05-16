@@ -1,8 +1,5 @@
 package company;
 
-
-import java.io.File;
-
 public class Main {
 
 
@@ -16,8 +13,8 @@ public class Main {
             System.exit(1);
         }
 
-        final File output = new File("C:\\Users\\"+System.getProperty("user.name")+"\\Desktop\\javaupdate"+version.getNewver()+".jar");
-        Download download = new Download(url,output);
+
+        Download download = new Download(url, version.getNewer());
         download.run();
     }
 
